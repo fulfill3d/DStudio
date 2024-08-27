@@ -1,4 +1,4 @@
-import {Canvas} from "@/models/canvas/Canvas";
+import {Canvas} from "@/models/canvas/canvas";
 
 export const canvas_options: Canvas = {
     scaleFactor: 3,

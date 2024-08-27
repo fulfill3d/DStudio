@@ -1,7 +1,7 @@
 import {createAction, createAsyncThunk, createSlice} from '@reduxjs/toolkit';
-import {Studio} from "@/models/babylon/Studio";
-import {StudioManager} from "@/models/babylon/StudioManager";
-import {BEngine} from "@/models/babylon/BEngine";
+import {Studio} from "@/models/babylon/studio";
+import {StudioManager} from "@/models/babylon/studio-manager";
+import {BEngine} from "@/models/babylon/b-engine";
 
 export const studioSingletonCreated = createAction('studio/studioSingletonCreated');
 export const babylonInitialized = createAction('studio/babylonInitialized');

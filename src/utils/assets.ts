@@ -1,4 +1,4 @@
-import {IAsset} from "@/types/utils/IAsset";
+import {IAsset} from "@/types/utils/i-asset";
 
 export const assets: IAsset[] = [
     {

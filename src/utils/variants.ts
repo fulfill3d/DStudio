@@ -1,4 +1,4 @@
-import {IVariant} from "@/types/utils/IVariant";
+import {IVariant} from "@/types/utils/i-variant";
 
 export const variants: IVariant[] = [
     {
