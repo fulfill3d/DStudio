@@ -2,8 +2,8 @@
 
 import {Provider} from "react-redux";
 import store from "@/store/store";
-import {DesignStudio} from "@/containers/DesignStudio";
-import {validateToken} from "@/hooks/common/useValidateToken";
+import {DesignStudio} from "@/containers/design-studio";
+import {validateToken} from "@/hooks/common/use-validate-token";
 import {useEffect, useState} from "react";
 
 export default function Home() {
