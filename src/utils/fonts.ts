@@ -1,0 +1,22 @@
+export const font_family_list = [
+    { name: "Roboto", id: "roboto-font" },
+    { name: "Open Sans", id: "open-sans-font" },
+    { name: "Lato", id: "lato-font" },
+    { name: "Montserrat", id: "montserrat-font" },
+    { name: "Raleway", id: "raleway-font" },
+    { name: "Source Sans Pro", id: "source-sans-pro-font" },
+    { name: "Poppins", id: "poppins-font" },
+    { name: "Noto Sans", id: "noto-sans-font" },
+    { name: "Oswald", id: "oswald-font" },
+    { name: "Playfair Display", id: "playfair-display-font" },
+    { name: "Arimo", id: "arimo-font" },
+    { name: "Merriweather", id: "merriweather-font" },
+    { name: "Ubuntu", id: "ubuntu-font" },
+    { name: "Quicksand", id: "quicksand-font" },
+    { name: "Muli", id: "muli-font" },
+    { name: "Work Sans", id: "work-sans-font" },
+    { name: "Bebas Neue", id: "bebas-neue-font" },
+    { name: "Josefin Sans", id: "josefin-sans-font" },
+    { name: "Zilla Slab", id: "zilla-slab-font" },
+    { name: "Comfortaa", id: "comfortaa-font" }
+]
