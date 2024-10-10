@@ -1,6 +1,6 @@
 import {Nullable} from "@babylonjs/core";
 import {fabric} from "fabric";
-import {FObject} from "@/types/model/fabric/f-object";
+import {FObject} from "@/interfaces/model/fabric/f-object";
 import {CustomDesign} from "@/models/design/custom-design";
 import {CustomText} from "@/models/design/custom-text";
 import {CustomImage} from "@/models/design/custom-image";

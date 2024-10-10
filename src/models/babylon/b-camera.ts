@@ -1,5 +1,5 @@
 import {ArcRotateCamera, Nullable} from "@babylonjs/core";
-import {IBCameraOption} from "@/types/model/babylon/i-b-camera-option";
+import {IBCameraOption} from "@/interfaces/model/babylon/i-b-camera-option";
 import {BScene} from "@/models/babylon/b-scene";
 import {BEngine} from "@/models/babylon/b-engine";
 

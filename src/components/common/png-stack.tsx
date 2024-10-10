@@ -1,5 +1,5 @@
 import {useVariantSelect} from "@/hooks/controller/product/use-variant-select";
-import {IPngStackType} from "@/types/component/common/i-png-stack-type";
+import {IPngStackType} from "@/interfaces/component/common/i-png-stack-type";
 
 
 export function PngStack(props: IPngStackType) {

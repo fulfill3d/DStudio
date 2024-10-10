@@ -1,4 +1,4 @@
-import {IVariantData} from "@/types/utils/i-variant-data";
+import {IVariantData} from "@/interfaces/utils/i-variant-data";
 
 export interface IPngStackType {
     variant: IVariantData;

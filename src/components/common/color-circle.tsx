@@ -1,5 +1,5 @@
 import React from 'react';
-import {IColorCircleType} from "@/types/component/common/i-color-circle-type";
+import {IColorCircleType} from "@/interfaces/component/common/i-color-circle-type";
 
 export const ColorCircle = (props: IColorCircleType) => {
     const size = props.size || 50;

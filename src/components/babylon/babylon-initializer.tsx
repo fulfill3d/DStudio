@@ -1,7 +1,7 @@
 import {useAppDispatch} from "@/hooks/use-app-dispatch";
 import React, {useEffect} from "react";
 import {useSelector} from "react-redux";
-import {ICanvasInitializer} from "@/types/component/common/i-canvas-initializer";
+import {ICanvasInitializer} from "@/interfaces/component/common/i-canvas-initializer";
 import {RootState} from "@/store/store";
 import {createBabylon, destroyBabylon} from "@/store/slice/studio";
 

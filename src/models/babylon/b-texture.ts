@@ -1,5 +1,5 @@
 import {Texture} from "@babylonjs/core";
-import {IBTextureOption} from "@/types/model/babylon/i-b-texture-option";
+import {IBTextureOption} from "@/interfaces/model/babylon/i-b-texture-option";
 import {BScene} from "@/models/babylon/b-scene";
 
 export class BTexture extends Texture {

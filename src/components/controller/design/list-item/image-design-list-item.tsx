@@ -1,5 +1,5 @@
 import React from "react";
-import {IImageDesignListItem} from "@/types/component/controller/i-image-design-list-item";
+import {IImageDesignListItem} from "@/interfaces/component/controller/i-image-design-list-item";
 
 export function ImageDesignListItem({design, handleRemove}: IImageDesignListItem){
     const id = design.id;

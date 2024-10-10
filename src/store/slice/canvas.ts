@@ -1,7 +1,7 @@
 import {createAction, createAsyncThunk, createSlice} from '@reduxjs/toolkit';
 import {Canvas} from "@/models/canvas/canvas";
 import {DesignManager} from "@/models/design/design-manager";
-import {IInitFabricCanvas} from "@/types/component/canvas/i-init-fabric-canvas";
+import {IInitFabricCanvas} from "@/interfaces/component/canvas/i-init-fabric-canvas";
 import {FCanvas} from "@/models/fabric/f-canvas";
 
 export const fabricSingletonCreated = createAction('canvas/fabricSingletonCreated');

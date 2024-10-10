@@ -1,7 +1,7 @@
 import {createAction, createAsyncThunk, createSlice, PayloadAction} from '@reduxjs/toolkit';
 import {CustomDesign} from "@/models/design/custom-design";
 import {DesignManager} from "@/models/design/design-manager";
-import {IDesignBlueprint} from "@/types/design/i-design-blueprint";
+import {IDesignBlueprint} from "@/interfaces/design/i-design-blueprint";
 import {FCanvas} from "@/models/fabric/f-canvas";
 
 export const addCustomDesignBlueprint = createAction<IDesignBlueprint>('design/addCustomDesignBlueprint');
