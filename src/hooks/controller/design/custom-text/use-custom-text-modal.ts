@@ -2,7 +2,7 @@ import {useCallback, useState} from "react";
 import {fabric} from "fabric";
 import {useAppDispatch} from "@/hooks/use-app-dispatch";
 import {FCanvas} from "@/models/fabric/f-canvas";
-import {IColorListType} from "@/types/utils/i-color-list-type";
+import {IColorListType} from "@/interfaces/utils/i-color-list-type";
 import {DesignManager} from "@/models/design/design-manager";
 import {addCustomDesign} from "@/store/slice/design";
 

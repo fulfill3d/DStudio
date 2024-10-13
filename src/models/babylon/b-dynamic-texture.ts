@@ -1,5 +1,5 @@
 import {DynamicTexture} from "@babylonjs/core";
-import {IBDynamicTextureOption} from "@/types/model/babylon/i-b-dynamic-texture-option";
+import {IBDynamicTextureOption} from "@/interfaces/model/babylon/i-b-dynamic-texture-option";
 import {BScene} from "@/models/babylon/b-scene";
 
 export class BDynamicTexture extends DynamicTexture{

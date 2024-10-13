@@ -1,5 +1,5 @@
 import React from "react";
-import {ITextModalContentType} from "@/types/component/controller/i-text-modal-content-type";
+import {ITextModalContentType} from "@/interfaces/component/controller/i-text-modal-content-type";
 import {useCustomTextModal} from "@/hooks/controller/design/custom-text/use-custom-text-modal";
 import {color_list} from "@/utils/colors";
 import {ColorCircle} from "@/components/common/color-circle";

@@ -1,4 +1,4 @@
-import {IColorListType} from "@/types/utils/i-color-list-type";
+import {IColorListType} from "@/interfaces/utils/i-color-list-type";
 
 export interface IColorCircleType {
     color: IColorListType;

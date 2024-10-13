@@ -1,5 +1,5 @@
 import {useState} from "react";
-import {IVariantData} from "@/types/utils/i-variant-data";
+import {IVariantData} from "@/interfaces/utils/i-variant-data";
 import {variants} from "@/utils/variants";
 import {assets} from "@/utils/assets";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import {ITextDesignListItem} from "@/types/component/controller/i-text-design-list-item";
+import {ITextDesignListItem} from "@/interfaces/component/controller/i-text-design-list-item";
 
 export function TextDesignListItem({design, handleRemove}: ITextDesignListItem){
     const id = design.id;

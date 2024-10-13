@@ -1,7 +1,7 @@
 import type {Nullable} from "@babylonjs/core/types";
 import {Color3} from "@babylonjs/core/Maths/math.color";
-import {IBDynamicTextureOption} from "@/types/model/babylon/i-b-dynamic-texture-option";
-import {IBTextureOption} from "@/types/model/babylon/i-b-texture-option";
+import {IBDynamicTextureOption} from "@/interfaces/model/babylon/i-b-dynamic-texture-option";
+import {IBTextureOption} from "@/interfaces/model/babylon/i-b-texture-option";
 
 export interface IBMaterialOption{
     id: string;

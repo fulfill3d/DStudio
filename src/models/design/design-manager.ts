@@ -1,5 +1,5 @@
 import {fabric} from "fabric";
-import {IDesignBlueprint} from "@/types/design/i-design-blueprint";
+import {IDesignBlueprint} from "@/interfaces/design/i-design-blueprint";
 import {CustomDesign} from "@/models/design/custom-design";
 import {CustomText} from "@/models/design/custom-text";
 import {CustomImage} from "@/models/design/custom-image";

@@ -1,4 +1,4 @@
-import {IDesignBlueprint} from "@/types/design/i-design-blueprint";
+import {IDesignBlueprint} from "@/interfaces/design/i-design-blueprint";
 
 export interface ITextDesignListItem{
     design: IDesignBlueprint;

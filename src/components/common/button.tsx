@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import React from "react";
-import {IButtonType} from "@/types/component/common/i-button-type";
+import {IButtonType} from "@/interfaces/component/common/i-button-type";
 
 const Button = (props: IButtonType) => {
     return (

@@ -1,5 +1,5 @@
 import React, {useCallback} from 'react';
-import {ITextModalType} from "@/types/component/controller/i-text-modal-type";
+import {ITextModalType} from "@/interfaces/component/controller/i-text-modal-type";
 import {Modal} from "@/components/common/modal";
 import DropDown from "@/components/common/drop-down";
 import {TextModalContent} from "@/components/controller/design/text/text-modal-content";

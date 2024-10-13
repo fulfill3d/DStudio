@@ -1,5 +1,5 @@
 import {Engine, Nullable, Scene} from "@babylonjs/core";
-import {IBSceneOption} from "@/types/model/babylon/i-b-scene-option";
+import {IBSceneOption} from "@/interfaces/model/babylon/i-b-scene-option";
 
 export class BScene extends Scene{
     private static instance: Nullable<BScene> = null;

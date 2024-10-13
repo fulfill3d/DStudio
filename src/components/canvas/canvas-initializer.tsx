@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import {useAppDispatch} from "@/hooks/use-app-dispatch";
 import {useSelector} from "react-redux";
-import {ICanvasInitializer} from "@/types/component/common/i-canvas-initializer";
+import {ICanvasInitializer} from "@/interfaces/component/common/i-canvas-initializer";
 import {RootState} from "@/store/store";
 import {initFabricCanvas} from "@/store/slice/canvas";
 import {removeCustomDesign} from "@/store/slice/design";

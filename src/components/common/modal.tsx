@@ -1,5 +1,5 @@
 import React from 'react';
-import {IModalProps} from "@/types/component/common/i-modal-props";
+import {IModalProps} from "@/interfaces/component/common/i-modal-props";
 
 export function Modal({children}: IModalProps) {
     return (

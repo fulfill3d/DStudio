@@ -1,6 +1,6 @@
 import { useState } from "react";
 import classNames from "classnames";
-import {IDropdownType} from "@/types/component/common/i-dropdown-type";
+import {IDropdownType} from "@/interfaces/component/common/i-dropdown-type";
 
 const DropDown = ({ title, list, color = "lime", className, onClick }: IDropdownType) => {
     const [open, setOpen] = useState(false);
