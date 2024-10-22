@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import React from "react";
+import ReduxProvider from "@/components/common/redux-provider";
 
 export const metadata: Metadata = {
   title: "DStudio",
@@ -14,7 +15,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="h-screen w-screen">{children}</body>
+      <body>
+      <ReduxProvider>
+        {children}
+      </ReduxProvider>
+      </body>
     </html>
   );
 }
