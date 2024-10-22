@@ -4,46 +4,46 @@ export const assets: IAsset[] = [
     {
         id: 0,
         name: 'blank',
-        uri: '/Mug/Variants/blank.png'
+        uri: 'https://fulfill3dblobalpha.blob.core.windows.net/dstudio/blank.png'
     },
     {
         id: 1,
         name: 'alpine',
-        uri: '/Mug/Variants/alpine.png'
+        uri: 'https://fulfill3dblobalpha.blob.core.windows.net/dstudio/alpine.png'
     },
     {
         id: 2,
         name: 'black-tonal',
-        uri: '/Mug/Variants/black-tonal.png'
+        uri: 'https://fulfill3dblobalpha.blob.core.windows.net/dstudio/black-tonal.png'
     },
     {
         id: 3,
         name: 'charcoal',
-        uri: '/Mug/Variants/charcoal.png'
+        uri: 'https://fulfill3dblobalpha.blob.core.windows.net/dstudio/charcoal.png'
     },
     {
         id: 4,
         name: 'cream-tonal',
-        uri: '/Mug/Variants/cream-tonal.png'
+        uri: 'https://fulfill3dblobalpha.blob.core.windows.net/dstudio/cream-tonal.png'
     },
     {
         id: 5,
         name: 'fog',
-        uri: '/Mug/Variants/fog.png'
+        uri: 'https://fulfill3dblobalpha.blob.core.windows.net/dstudio/fog.png'
     },
     {
         id: 6,
         name: 'iris',
-        uri: '/Mug/Variants/iris.png'
+        uri: 'https://fulfill3dblobalpha.blob.core.windows.net/dstudio/iris.png'
     },
     {
         id: 7,
         name: 'rose-quartz',
-        uri: '/Mug/Variants/rose-quartz.png'
+        uri: 'https://fulfill3dblobalpha.blob.core.windows.net/dstudio/rose-quartz.png'
     },
     {
         id: 8,
         name: 'tigerlily',
-        uri: '/Mug/Variants/tigerlily.png'
+        uri: 'https://fulfill3dblobalpha.blob.core.windows.net/dstudio/tigerlily.png'
     }
 ]

@@ -1,6 +1,6 @@
 import {useVariantSelect} from "@/hooks/controller/product/use-variant-select";
 import {IPngStackType} from "@/interfaces/component/common/i-png-stack-type";
-
+import Image from 'next/image';
 
 export function PngStack(props: IPngStackType) {
     const size = props.size || 50;
@@ -15,7 +15,14 @@ export function PngStack(props: IPngStackType) {
         >
             <div className='flex flex-col border border-black mr-8'>
                 {props.variant.assets.map((asset, index) => (
-                    <img alt={'favicon.ico'} key={index} src={asset.uri} style={ {width: width, height: height, objectFit: 'fill'}}/>
+                    <Image
+                        alt="favicon.ico"
+                        key={index}
+                        src={asset.uri}
+                        width={width}
+                        height={height}
+                        className="object-fill"
+                    />
                     ))}
             </div>
         </div>
