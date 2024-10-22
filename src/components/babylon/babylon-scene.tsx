@@ -5,7 +5,7 @@ const BabylonScene = () => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
 
     return (
-        <div className='size-full items-center justify-center'>
+        <div className='w-full h-full items-center justify-center'>
             <BabylonInitializer canvasRef={canvasRef}/>
             <canvas ref={canvasRef} id={"my-model"} className='size-full outline-none'/>
         </div>
