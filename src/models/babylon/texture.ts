@@ -96,6 +96,7 @@ export class Texture{
     drawDesignOnBabylonTexture(src: string) {
         return new Promise<void>((resolve, reject) => {
             const image = new Image();
+            image.crossOrigin = "anonymous";
             image.src = src;
             image.onload = () => {
                 if (this.babylon_texture_context){
