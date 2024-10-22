@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import {validateToken} from "@/service/common/validate-token";
 
-export const useValidateToken = async (token: string) => {
+export const useValidateToken = () => {
     const [isAuthenticated, setIsAuthenticated] = useState(false);
     const [message, setMessage] = useState("Unauthorized");
 
