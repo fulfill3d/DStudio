@@ -138,15 +138,10 @@ export class FCanvas extends fabric.Canvas {
             const processedText = text.replace(/ /g, '\u00A0');
             const textBox = new fabric.Textbox(processedText, properties) as fabric.Textbox & FObject;
             textBox.set({ id: design.id }); // Set the ID on the Fabric object
-            textBox.on('moving', function() {
-                FCanvas.moving.call(textBox, canvas);
-            });
-            textBox.on('scaling', function() {
-                FCanvas.scaling.call(textBox, canvas);
-            });
+            textBox.on('moving', () => FCanvas.moving.call(textBox, canvas));
+            textBox.on('scaling', () => FCanvas.scaling.call(textBox, canvas));
             canvas.add(textBox);
             canvas.renderAll();
-            // this.update_design_method(model);
             FCanvas.updateStudioTexture();
         }
     }
@@ -164,12 +159,10 @@ export class FCanvas extends fabric.Canvas {
                 fObjectImg.set({ id: design.id }); // Set the ID on the Fabric object
                 canvas.add(fObjectImg);
                 canvas.renderAll();
-                // TODO: move / scale rules
-                // img.on('moving', function() { // @ts-ignore
-                //     moving.call(this, this.f_instance); });
-                // img.on('scaling', function() { // @ts-ignore
-                //     scaling.call(this, this.f_instance); });
-                // this.update_design_method(model);
+                // TODO: scale rules
+                img.on('moving', () => FCanvas.moving.call(img, canvas));
+                // TODO: move rules
+                img.on('scaling', () => FCanvas.scaling.call(img, canvas));
                 this.updateStudioTexture();
             });
         }
@@ -230,6 +223,7 @@ export class FCanvas extends fabric.Canvas {
 
     static scaling(this: fabric.Object, fabricCanvas: fabric.Canvas){
         console.log('scaling...');
+        FCanvas.updateStudioTexture();
     }
 
 }
