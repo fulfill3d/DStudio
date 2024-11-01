@@ -4,10 +4,24 @@ pr:
   branches:
     include:
       - main
+  paths:
+    exclude:
+      - '/public/**'
+      - '/README.md'
+      - '/LICENCE'
+      - '/dstudio-static-web-app.yml'
+      - '/dstudio-static-web-app-alpha.yml'
 trigger:
   branches:
     include:
       - main
+  paths:
+    exclude:
+      - '/public/**'
+      - '/README.md'
+      - '/LICENCE'
+      - '/dstudio-static-web-app.yml'
+      - '/dstudio-static-web-app-alpha.yml'
 
 jobs:
 - job: build_and_deploy_job

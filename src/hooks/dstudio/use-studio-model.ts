@@ -1,20 +1,25 @@
 import {useEffect} from "react";
 import {useAppDispatch} from "@/hooks/use-app-dispatch";
 import {Studio} from "@/models/babylon/studio";
-import {product_manifest} from "@/utils/product_manifest";
-import {scene_manifest} from "@/utils/scene_manifest";
 import {createStudioSingleton} from "@/store/slice/studio";
 import {createFabricSingleton} from "@/store/slice/canvas";
-import {canvas_options} from "@/utils/canvas_options";
+import {useGetManifest} from "@/hooks/common/use-get-manifest";
 
-export const useStudioModel = () => {
+export const useStudioModel = (id: string, partitionKey: string) => {
+
+    const {manifest, loading, error} = useGetManifest(id, partitionKey);
+
     const dispatch = useAppDispatch();
 
     useEffect(() => {
-        const studio = new Studio(product_manifest, scene_manifest);
+        if (manifest && manifest.canvas){
+            const studio = new Studio(manifest.product, manifest.scene);
 
-        dispatch(createStudioSingleton(studio));
-        dispatch(createFabricSingleton(canvas_options));
+            dispatch(createStudioSingleton(studio));
+            dispatch(createFabricSingleton(manifest.canvas));
+        }
 
-    }, [dispatch]);
+    }, [dispatch, manifest]);
+
+    return { loading, error };
 }
