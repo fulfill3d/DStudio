@@ -46,11 +46,11 @@ export const canvas = createSlice({
         builder
             .addCase(createFabricSingleton.fulfilled, (state, action) => {
                 // Handle any specific logic if needed when the async operation is successful
-                console.log('createFabricSingleton.fulfilled');
+                // console.log('createFabricSingleton.fulfilled');
             })
             .addCase(initFabricCanvas.fulfilled, (state, action) => {
                 // Handle any specific logic if needed when the async operation is successful
-                console.log('initFabricCanvas.fulfilled');
+                // console.log('initFabricCanvas.fulfilled');
             })
     }
 });

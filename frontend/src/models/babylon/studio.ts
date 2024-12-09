@@ -36,8 +36,9 @@ export class Studio {
         this.scene.setup(this.babylon_scene);
 
         this.loadComponents(this.babylon_scene)
-            .then(() => { this.loaded = true; })
+            .then(() => {})
             .catch((r) => { console.log(r); })
+            .finally(() => { this.loaded = true; })
     }
 
     async loadComponents(scene: BabylonScene){
@@ -125,6 +126,23 @@ export class Studio {
                 await component.updateVariant(uri);
             }
         }
+    }
+
+    test(){
+        const comp = this.components[0];
+        const mesh = comp.getMesh();
+        const material = mesh.getMaterial();
+        const texture = material.getTexture();
+
+        console.log('TEST');
+        console.log(this.babylon_scene);
+        console.log(comp);
+        console.log(mesh);
+        console.log(mesh.getBabylonMeshes());
+        console.log(material);
+        console.log(material.getBabylonMaterial());
+        console.log(texture);
+        console.log(texture?.getBabylonTexture());
     }
 
 }

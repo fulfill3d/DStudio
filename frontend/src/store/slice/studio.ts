@@ -54,15 +54,15 @@ export const studio = createSlice({
     builder
         .addCase(createStudioSingleton.fulfilled, (state, action) => {
             // Handle any specific logic if needed when the async operation is successful
-            console.log('createStudioSingleton.fulfilled');
+            // console.log('createStudioSingleton.fulfilled');
         })
         .addCase(createBabylon.fulfilled, (state, action) => {
             // Handle any specific logic if needed when the async operation is successful
-            console.log('createBabylon.fulfilled');
+            // console.log('createBabylon.fulfilled');
         })
         .addCase(destroyBabylon.fulfilled, (state, action) => {
             // Handle any specific logic if needed when the async operation is successful
-            console.log('destroyBabylon.fulfilled');
+            // console.log('destroyBabylon.fulfilled');
         })
 }
 });
