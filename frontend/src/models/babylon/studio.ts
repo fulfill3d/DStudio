@@ -128,21 +128,21 @@ export class Studio {
         }
     }
 
-    test(){
-        const comp = this.components[0];
-        const mesh = comp.getMesh();
-        const material = mesh.getMaterial();
-        const texture = material.getTexture();
-
-        console.log('TEST');
-        console.log(this.babylon_scene);
-        console.log(comp);
-        console.log(mesh);
-        console.log(mesh.getBabylonMeshes());
-        console.log(material);
-        console.log(material.getBabylonMaterial());
-        console.log(texture);
-        console.log(texture?.getBabylonTexture());
-    }
+    // test(){
+    //     const comp = this.components[0];
+    //     const mesh = comp.getMesh();
+    //     const material = mesh.getMaterial();
+    //     const texture = material.getTexture();
+    //
+    //     console.log('TEST');
+    //     console.log(this.babylon_scene);
+    //     console.log(comp);
+    //     console.log(mesh);
+    //     console.log(mesh.getBabylonMeshes());
+    //     console.log(material);
+    //     console.log(material.getBabylonMaterial());
+    //     console.log(texture);
+    //     console.log(texture?.getBabylonTexture());
+    // }
 
 }
